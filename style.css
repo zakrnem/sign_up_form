@@ -1,3 +1,9 @@
+@font-face {
+    font-family: title-font;
+    src: url(LuckiestGuy-Regular.ttf);
+  }
+
+
 button,
 input {
   font-family: inherit;
@@ -10,6 +16,8 @@ input {
 
 body {
     margin: 0;
+    font-family: "Exo 2", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
 }
 
 main {
@@ -28,30 +36,73 @@ main {
     justify-content: space-between;
 }
 
-@font-face {
-    font-family: my-cool-font;
-    src: url(LuckiestGuy-Regular.ttf);
-  }
-
 .title {
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 4rem;
     text-align: center;
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
-    font-family: my-cool-font, sans-serif;
+    font-family: title-font, sans-serif;
     background-color: rgba(256,256,256,0.5);
+    padding: 2rem 0 1.5rem 0;
+    color: rgb(30, 111, 124)
 }
 
 .photo-credits {
     margin-bottom: 0.6rem;
-    color: white;
+    color: whitesmoke;
 }
+
+.photo-credits>a:link,
+.photo-credits>a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.photo-credits>a:hover {
+    color:rgb(248, 91, 172);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.photo-credits>a:active {
+    color:rgb(247, 8, 132);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 .form-container {
     display: flex;
 }
 
-* {
-    border: solid 2px red;
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(rgb(247, 208, 219), rgb(137, 112, 119));
+    padding: 0 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    font-size: 0.9rem;
+}
+
+form > * {
+    width: 45%;
+}
+
+input {
+    display: block;
+    width: 90%;
+    padding: 0.4rem 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.right-middle {
+    margin-bottom: 2rem;
 }
