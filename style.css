@@ -1,0 +1,51 @@
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+}
+
+.left-container {
+    display: flex;
+    flex: 1 0 max(30%, 400px);
+    flex-direction: column;
+    background-image: url("ander-pena-KcRe40onpkg-unsplash.jpg");
+    background-size: cover;
+    background-position: -50px;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    width: 100%;
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgba(256,256,256,0.5);
+}
+
+.photo-credits {
+    margin-bottom: 0.6rem;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+}
+
+* {
+    border: solid 2px red;
+}
