@@ -14,6 +14,11 @@ input {
   box-sizing: border-box;
 }
 
+button {
+    padding: 0.4rem 0.5rem;
+    font-size: 1.1rem;
+}
+
 body {
     margin: 0;
     font-family: "Exo 2", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -105,4 +110,24 @@ input {
 
 .right-middle {
     margin-bottom: 2rem;
+}
+
+input:focus,
+textarea:focus {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+input:invalid,
+textarea:invalid {
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px dashed red;
+  border-radius: 5px;
+}
+
+input:valid,
+textarea:valid {
+  background: rgba(0, 0, 0, 0.1);
+  border: solid green;
+  border-radius: 5px;
 }
