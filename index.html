@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
     <title>Camping Club</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -37,19 +38,19 @@
                         </div>
                         <div class="email">
                             <label for="email">Email</label>
-                            <input type="email" name="email" required>
+                            <input type="email" name="email" minlength="6" required>
                         </div>
-                        <div class="number">
+                        <div class="phone">
                             <label for="number">Phone Number</label>
-                            <input type="number" name="number" minlength="5" required>
+                            <input type="number" name="number" min="1000" id="phone" required>
                         </div>
                         <div class="password1">
                             <label for="password1">Password</label>
-                            <input type="password" name="password1" minlength="8" required>
+                            <input type="password" name="password1" id="pass1" minlength="8" required>
                         </div>
                         <div class="password2">
                             <label for="password2">Confirm Password</label>
-                            <input type="password" name="password2" minlength="8" required>
+                            <input type="password" name="password2" id="pass2" minlength="8" required>
                         </div>
                         <div class="submit-button">
                             <button type="submit">Create Account</button>

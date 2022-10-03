@@ -112,22 +112,15 @@ input {
     margin-bottom: 2rem;
 }
 
-input:focus,
-textarea:focus {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
 input:invalid,
 textarea:invalid {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.5);
   border: 2px dashed red;
   border-radius: 5px;
 }
 
 input:valid,
 textarea:valid {
-  background: rgba(0, 0, 0, 0.1);
-  border: solid green;
+  border: 2px solid green;
   border-radius: 5px;
 }
