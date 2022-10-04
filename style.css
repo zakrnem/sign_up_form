@@ -38,15 +38,20 @@ main {
 }
 
 .left-container {
-    display: flex;
-    flex: 1 0 max(30%, 400px);
-    flex-direction: column;
+    flex: 1 0 min(40%, 360px);
     background-image: url("ander-pena-KcRe40onpkg-unsplash.jpg");
     background-size: cover;
     background-position: -50px;
-    height: 100vh;
+    height: 100vh;  
+}
+
+.left-container2 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    height: 100vh;
 }
 
 .title {
@@ -56,8 +61,8 @@ main {
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
     font-family: title-font, sans-serif;
-    background-color: rgba(256,256,256,0.5);
-    padding: 2rem 0 1.5rem 0;
+    background-color: rgba(256,256,256,0.3);
+    padding: 1rem 0 0.3rem 0;
     color: rgb(30, 111, 124)
 }
 
@@ -94,8 +99,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(rgb(247, 208, 219), rgb(137, 112, 119));
-    padding: 0 1.5rem;
 }
 
 form {
@@ -103,10 +106,20 @@ form {
     flex-wrap: wrap;
     gap: 1.2rem;
     font-size: 0.9rem;
+    background-image: linear-gradient(rgb(247, 208, 219), rgb(137, 112, 119));
 }
 
 form > * {
     width: 45%;
+    /* padding: 0 1.5rem; */
+}
+
+.main-text {
+    padding: 0 1.5rem;
+}
+
+.right-middle > p {
+    padding: 0 1.5rem;
 }
 
 input {
