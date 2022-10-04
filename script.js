@@ -22,13 +22,14 @@ userPass2.addEventListener('input', (e) => {
 let userPhone = document.getElementById('phone');
 let phoneErrorCount = 0;
 userPhone.addEventListener('input', (e) => {
-    if(userPhone.value.length<5 && phoneErrorCount < 1) {
+    if(userPhone.value.length<4 && phoneErrorCount < 1) {
         userPhone.setCustomValidity('Enter a valid phone number');
         phoneErrorCount += 1;
-        console.log(phoneErrorCount);
     }
-    else if (userPhone.value.length<5 && phoneErrorCount >= 1) {
-        console.log(phoneErrorCount)
+    else if (userPhone.value.length<4 && phoneErrorCount >= 1) {
         userPhone.setCustomValidity('The number should have at least 4 digits');
+    }
+    else if(userPhone.value.length>3) {
+        userPhone.setCustomValidity("");
     }
 })
