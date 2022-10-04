@@ -14,9 +14,17 @@ input {
   box-sizing: border-box;
 }
 
-button {
+.submit-button > button {
     padding: 0.4rem 0.5rem;
     font-size: 1.1rem;
+}
+
+.submit-button > button:hover {
+    background-color: rgb(248, 204, 226);
+}
+
+.submit-button > button:active {
+    background-color: rgb(252, 162, 209);
 }
 
 body {
