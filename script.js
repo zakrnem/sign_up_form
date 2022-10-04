@@ -1,21 +1,20 @@
 let userPass1 = document.getElementById('pass1');
 let userPass2 = document.getElementById('pass2');
 
-let pass2Message = document.createElement('div');
-pass2Message.textContent = 'Passwords do not match';
-pass2Message.style.color = 'red';
-let passNode = document.querySelector('.password2');
+let passMessage = document.querySelector('.pass-message');
 
 
 userPass2.addEventListener('input', (e) => {
     if(userPass1.value !== userPass2.value) {
         userPass2.setCustomValidity('Passwords do not match');
         userPass2.style.cssText = 'background: rgba(255, 255, 255, 0.5); border: 2px dashed red; border-radius: 5px;';
-        passNode.appendChild(pass2Message);
+        passMessage.textContent = 'Passwords do not match';
+        passMessage.style.color = 'red';
+        
     }
     if(userPass2.value===userPass1.value) {
-        userPass2.style.cssText = 'background: rgba(255, 255, 255, 0.5); border: 2px solid green; border-radius: 5px;';
-        passNode.removeChild(pass2Message);
+        userPass2.style.cssText = 'background: rgba(255, 255, 255, 0.5); border: 2px solid rgb(30, 111, 124); border-radius: 5px;';
+        passMessage.innerHTML = '&nbsp';
         userPass2.setCustomValidity("");
     }
 })
